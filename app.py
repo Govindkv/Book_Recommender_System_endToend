@@ -13,10 +13,10 @@ st.markdown("<h5 style='text-align: right; color: #ff6600;'>Powered by Govind Ku
 
 # Load models and data with error handling
 try:
-    model = pickle.load(open('artifacts\model.pkl', 'rb'))
-    book_names = pickle.load(open('artifacts\books_name.pkl', 'rb'))
-    final_rating = pickle.load(open('artifacts\final_rating.pkl', 'rb'))
-    book_pivot = pickle.load(open('artifacts\book_pivot.pkl', 'rb'))
+    model = pickle.load(open('artifacts/model.pkl', 'rb'))
+    book_names = pickle.load(open('artifacts/books_name.pkl', 'rb'))
+    final_rating = pickle.load(open('artifacts/final_rating.pkl', 'rb'))
+    book_pivot = pickle.load(open('artifacts/book_pivot.pkl', 'rb'))
 except Exception as e:
     st.error(f"Error loading files: {e}")
     st.stop()
